@@ -1,66 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ProductCard } from "../../components";
 import { FilterBar } from "./components/FilterBar";
 
-const products = [
-  {
-    id: "enQ7lRYW-uU",
-    scientificName: "Pothos",
-    commonName: "Snow Queen",
-    size: "6in. Pot",
-    price: 15,
-    rarity: "common",
-  },
-  {
-    id: "N7oHWhK9UDM",
-    scientificName: "Senecio rowleyanus",
-    commonName: "String of Pearls",
-    size: "4in. Pot",
-    price: 12,
-    rarity: "common",
-  },
-  {
-    id: "OSBEqWnoDYo",
-    scientificName: "Scindapsus pictus",
-    commonName: "Satin Pothos",
-    size: "4in. Pot",
-    price: 15,
-    rarity: "common",
-  },
-  {
-    id: "MBsReSZ2WNM",
-    scientificName: "Dracaena trifasciata",
-    commonName: "Snake Plant",
-    size: "4in. Pot",
-    price: 30,
-    rarity: "common",
-  },
-  {
-    id: "bwsTJMnhcwE",
-    scientificName: "Monstera deliciosa",
-    commonName: "Swiss Cheese Plant",
-    size: "8in. Pot",
-    price: 80,
-    rarity: "uncommon",
-  },
-  {
-    id: "TNTZ9XRisjQ",
-    scientificName: "Ficus lyrata",
-    commonName: "Fiddle Leaf Fig",
-    size: "6in. Pot",
-    price: 60,
-    rarity: "uncommon",
-  },
-];
-
 export const ProductsPage = () => {
   const [showFilter, setShowFilter] = useState(false);
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    async function fetchProducts() {
+      const response = await fetch("http://localhost:8000/products");
+      const data = await response.json();
+      setProducts(data);
+    }
+
+    fetchProducts();
+  }, []);
   return (
     <main>
       <section className="my-5">
         <div className="my-5 flex justify-between">
           <span className="text-2xl font-semibold dark:text-slate-100 mb-5">
-            All Products (15)
+            All Products ({products.length})
           </span>
           <span>
             <button

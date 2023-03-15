@@ -1,13 +1,24 @@
 import { Link } from "react-router-dom";
+import { Rating } from "./Rating";
 export const ProductCard = ({ product }) => {
-  const { id, commonName, scientificName, price } = product;
+  const {
+    id,
+    commonName,
+    scientificName,
+    overview,
+    rating,
+    price,
+    best_seller,
+  } = product;
   const img_url = `https://source.unsplash.com/${id}/600x300`;
   return (
     <div className="m-3 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-      <Link to="/" className="relative">
-        <span className="absolute top-4 left-2 px-2 bg-orange-500 bg-opacity-90 text-white rounded">
-          Best Seller
-        </span>
+      <Link to={`/products/${id}`} className="relative">
+        {best_seller && (
+          <span className="absolute top-4 left-2 px-2 bg-orange-500 bg-opacity-90 text-white rounded">
+            Best Seller
+          </span>
+        )}
         <img
           className="rounded-t-lg object-cover object-top max-h-64 w-full"
           src={img_url}
@@ -15,21 +26,19 @@ export const ProductCard = ({ product }) => {
         />
       </Link>
       <div className="p-5">
-        <Link to="/">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <Link to={`/products/${id}`}>
+          <h5 className="mb-0 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {commonName}
           </h5>
         </Link>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {scientificName}
+        <p className="mb-3 italic font-light text-gray-700 dark:text-gray-400">
+          ({scientificName})
         </p>
-
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          {overview}
+        </p>
         <div className="flex items-center my-2">
-          <i className="text-lg bi bi-star-fill text-yellow-500 mr-1"></i>
-          <i className="text-lg bi bi-star-fill text-yellow-500 mr-1"></i>
-          <i className="text-lg bi bi-star-fill text-yellow-500 mr-1"></i>
-          <i className="text-lg bi bi-star-fill text-yellow-500 mr-1"></i>
-          <i className="text-lg bi bi-star text-yellow-500 mr-1"></i>
+          <Rating rating={rating} />
         </div>
 
         <p className="flex justify-between items-center">
