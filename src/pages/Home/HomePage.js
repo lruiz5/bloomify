@@ -1,7 +1,12 @@
+import { Hero, FeaturedProducts, Testimonials, Faq } from "./components";
+
 export const HomePage = () => {
   return (
     <main>
-      <div>Home</div>
+      <Hero />
+      <FeaturedProducts />
+      <Testimonials />
+      <Faq />
     </main>
   );
 };
