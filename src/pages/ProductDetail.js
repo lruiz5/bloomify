@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useTitle } from "../hooks/useTitle";
 import { Rating } from "../components/Elements/Rating";
 
 export const ProductDetail = () => {
   const [product, setProduct] = useState([]);
   const { id } = useParams();
+  useTitle(product.scientificName);
   const img_url = `https://source.unsplash.com/${id}/600x600`;
   useEffect(() => {
     async function fetchProducts() {
