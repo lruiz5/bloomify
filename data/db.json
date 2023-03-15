@@ -1,0 +1,124 @@
+{
+    "products" : [
+        {
+            "id": "enQ7lRYW-uU",
+            "scientificName": "Epipremnum aureum",
+            "commonName": "Snow Queen",
+            "overview": "Keeping the Snow Queen pothos happy indoors is pretty straightforward. However, its care differs slightly from other pothos varieties like the golden pothos or Marble Queen pothos.",
+            "description": "",
+            "size": "6in. Pot",
+            "price": 15,
+            "in_stock" : true,
+            "rating": 5,
+            "best_seller" : true,
+            "rarity": "common"
+        },
+        {
+            "id": "N7oHWhK9UDM",
+            "scientificName": "Senecio rowleyanus",
+            "commonName": "String of Pearls",
+            "overview": "This is a flowering plant in the daisy family Asteraceae. It is a creeping, perennial, succulent vine native to the drier parts of southwest Africa.",
+            "description": "",
+            "size": "4in. Pot",
+            "price": 15,
+            "in_stock" : true,
+            "rating": 5,
+            "best_seller" : false,
+            "rarity": "common"
+          },
+        {
+          "id": "OSBEqWnoDYo",
+          "scientificName": "Scindapsus pictus",
+          "commonName": "Satin Pothos",
+          "overview": "This is a species of flowering plant in the arum family Araceae, native to India, Bangladesh, Thailand, Peninsular Malaysia, Borneo, Java, Sumatra, Sulawesi, and the Philippines.",
+          "description": "",
+          "size": "4in. Pot",
+          "price": 15,
+          "in_stock" : true,
+          "rating": 4,
+          "best_seller" : false,
+          "rarity": "common"
+        },
+        {
+          "id": "MBsReSZ2WNM",
+          "scientificName": "Dracaena trifasciata",
+          "commonName": "Snake Plant",
+          "overview": "This is a species of flowering plant in the family Asparagaceae, native to tropical West Africa from Nigeria to the Congo. It is commonly known as the snake plant, among other names.",
+          "description": "",
+          "size": "4in. Pot",
+          "price": 30,
+          "in_stock" : true,
+          "rating": 4,
+          "best_seller" : true,
+          "rarity": "common"
+        },
+        {
+            "id": "bwsTJMnhcwE",
+            "scientificName": "Monstera deliciosa",
+            "commonName": "Swiss Cheese Plant",
+            "overview": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama.",
+            "description": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama. It has been introduced to many tropical areas, and has become a mildly invasive species in Hawaii, Seychelles, Ascension Island and the Society Islands",
+            "size": "8in. Pot",
+            "price": 80,
+            "in_stock" : true,
+            "rating": 4,
+            "best_seller" : false,
+            "rarity": "uncommon"
+          },
+        {
+          "id": "TNTZ9XRisjQ",
+          "scientificName": "Ficus lyrata",
+          "commonName": "Fiddle Leaf Fig",
+          "overview": "Commonly known as the fiddle-leaf fig, this is a species of flowering plant in the mulberry and fig family Moraceae. It is native to western Africa's lowland tropical rainforest.",
+          "description": "",
+          "size": "6in. Pot",
+          "price": 60,
+          "in_stock" : true,
+          "rating": 5,
+          "best_seller" : true,
+          "rarity": "uncommon"
+        }
+      ],
+      "featured_products": [
+        {
+        "id": "enQ7lRYW-uU",
+        "scientificName": "Epipremnum aureum",
+        "commonName": "Snow Queen",
+        "overview": "Keeping the Snow Queen pothos happy indoors is pretty straightforward. However, its care differs slightly from other pothos varieties like the golden pothos or Marble Queen pothos.",
+        "description": "",
+        "size": "6in. Pot",
+        "price": 15,
+        "in_stock" : true,
+        "rating": 5,
+        "best_seller" : true,
+        "rarity": "common"
+      },
+      {
+        "id": "bwsTJMnhcwE",
+        "scientificName": "Monstera deliciosa",
+        "commonName": "Swiss Cheese Plant",
+        "overview": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama.",
+        "description": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama. It has been introduced to many tropical areas, and has become a mildly invasive species in Hawaii, Seychelles, Ascension Island and the Society Islands",
+        "size": "8in. Pot",
+        "price": 80,
+        "in_stock" : true,
+        "rating": 4,
+        "best_seller" : false,
+        "rarity": "uncommon"
+      },
+      {
+        "id": "N7oHWhK9UDM",
+        "scientificName": "Senecio rowleyanus",
+        "commonName": "String of Pearls",
+        "overview": "This is a flowering plant in the daisy family Asteraceae. It is a creeping, perennial, succulent vine native to the drier parts of southwest Africa.",
+        "description": "",
+        "size": "4in. Pot",
+        "price": 15,
+        "in_stock" : true,
+        "rating": 5,
+        "best_seller" : false,
+        "rarity": "common"
+      }],
+      "orders": [],
+      "users": []
+}

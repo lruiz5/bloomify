@@ -11,7 +11,7 @@ export const Testimonials = () => {
               Wouldn't Shop Anywhere Else!
             </h3>
             <p className="my-4 font-light">
-              If you care for your time, I hands down would go with this."
+              "If you care for your time, I hands down would go with this."
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
@@ -34,7 +34,7 @@ export const Testimonials = () => {
               Outstanding Selection of Plants
             </h3>
             <p className="my-4 font-light">
-              Designing with Figma components that can be easily translated to
+              "Designing with Figma components that can be easily translated to
               the utility classes of Tailwind CSS is a huge timesaver!"
             </p>
           </blockquote>
@@ -58,8 +58,8 @@ export const Testimonials = () => {
               Vast Selection of Rare Plants :O
             </h3>
             <p className="my-4 font-light">
-              Aesthetically, the well designed components are beautiful and will
-              undoubtedly level up your next application."
+              "Aesthetically, the well designed components are beautiful and
+              will undoubtedly level up your next application."
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
@@ -82,8 +82,8 @@ export const Testimonials = () => {
               Exactly What I've Been Looking For!
             </h3>
             <p className="my-4 font-light">
-              You have many examples that can be used to create a fast prototype
-              for your team."
+              "You have many products that can be used to create a fast
+              prototype for your team."
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
