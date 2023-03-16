@@ -1,5 +1,18 @@
 {
     "products" : [
+      {
+        "id": "iB9P8kt2bis",
+        "scientificName": "Begonia x corallina",
+        "commonName": "Angel Wing Begonia",
+        "overview": "The cane begonias are a group of Begonia cultivars. Their name derives from their tough, bamboo-like stems. They can grow up to 10 ft tall, which may necessitate staking.",
+        "description": "Cane-type begonias are some of the best-performing and easiest begonias to grow. They are second only to wax begonias in their ease of culture, and second to none in their beauty. The most recognizable type of begonias are known as angel wing begonias. Native to Brazil, the plant grows on upright stems with interesting dotted leaves, unique colors, and a magnificent display of flowers. The plants are not particularly difficult to grow and can be planted and grown year-round indoors, providing you meet a few basic requirements. They'll grow at a moderately quick rate, with noticeable growth visible in just six weeks' time.",
+        "size": "4in. Pot",
+        "price": 95,
+        "in_stock" : true,
+        "rating": 4,
+        "best_seller" : false,
+        "rarity": "rare"
+    },
         {
             "id": "enQ7lRYW-uU",
             "scientificName": "Epipremnum aureum",
@@ -14,6 +27,19 @@
             "rarity": "common"
         },
         {
+          "id": "hPVWVpZoQJw",
+          "scientificName": "Ficus benjamina",
+          "commonName": "Weeping Fig",
+          "overview": "Commonly known as weeping fig, benjamin fig or ficus tree, and often sold in stores as just ficus, this is a species of flowering plant in the family Moraceae, native to Asia and Australia.",
+          "description": "Weeping fig (Ficus benjamina's common name is known as the ficus tree) grows as a large broadleaf evergreen tree in tropical and subtropical climates, but it is more often grown as a houseplant in homes, offices, and featured in interior commercial landscaping. The ficus tree is known for its longevity, living between 20 to 50 years. This elegant plant has slender branches that arch gracefully from a light gray trunk, with dense, glossy dark leaves. When the Ficus benjamina tree is grown indoors, the plants are normally pruned to keep them about 3 feet to 6 feet tall, and their trunks are sometimes braided for decorative appeal. It is a fast grower and may need to be repotted up to once per year, but do so in the early spring for best results. Weeping fig is toxic to humans and pets.",
+          "size": "4in. Pot",
+          "price": 25,
+          "in_stock" : false,
+          "rating": 4,
+          "best_seller" : true,
+          "rarity": "common"
+      },
+        {
             "id": "N7oHWhK9UDM",
             "scientificName": "Senecio rowleyanus",
             "commonName": "String of Pearls",
@@ -26,6 +52,19 @@
             "best_seller" : false,
             "rarity": "common"
         },
+        {
+          "id": "buUOOaoUOQI",
+          "scientificName": "Aglaonema Kiwi",
+          "commonName": "Chinese Evergreen",
+          "overview": "Aglaonema Kiwi is a sunworshipper and loves soaking up the rays. A compact clustering of green leaves with frills of white variegation, she looks good with very little effort.",
+          "description": "Intense variegation and packed masses of foliage spread out from the centre of this gorgeous aglaonema variety. The leaves boast more creamy white variegation than green, and for that reason it can really flourish in that sunny spot by the window, unlike most of its shade loving cousins, where it will continue to grow brilliantly white. The green speckles that are found up the midrib and margins of the large leaves as well as across the stems work to highlight the striking brilliance of the main leaf body. This plant is found on rainforest floors around the world, and even in a packed out mass of plants it really stands out because of its unusual colouration.",
+          "size": "6in. Pot",
+          "price": 20,
+          "in_stock" : true,
+          "rating": 5,
+          "best_seller" : false,
+          "rarity": "common"
+      },
         {
           "id": "OSBEqWnoDYo",
           "scientificName": "Scindapsus pictus",
@@ -53,6 +92,32 @@
           "rarity": "common"
         },
         {
+          "id": "zTAcTi7D5i8",
+          "scientificName": "Monstera deliciosa",
+          "commonName": "Monstera Variegata",
+          "overview": "Meet Monstera Variegata, the variegated Monstera! It’s got those same familiar jungle vibes, plus beautiful mottled foliage that really catch the eye.",
+          "description": "This beautiful and unusual rare monstera plant is currently in high demand. Like most other variegated rare plants, it is also a slow grower and takes us years to grow it into a nice plant in a 5” pot. This is not a cutting like you see offered in many places online. White Variegated Monstera has leaves 13-18” wide with large holes resembling Swiss cheese (some people call it Swiss Cheese Plant). Each leaf is unique with no two the same. The irregular cream-and-green variegation creates some leaves that are nearly fully white with green markings and other leaves are green with white marbling. Aerial roots anchor it to a trellis, moss pole or wall. In its native habitat, it’s an understory plant that climbs up tropical trees. Mature plants produce breadfruit, an 8-10” long cone, that takes a year to mature into an edible fruit.",
+          "size": "4in. Pot",
+          "price": 200,
+          "in_stock" : false,
+          "rating": 5,
+          "best_seller" : false,
+          "rarity": "rare"
+        },
+        {
+          "id": "8nONCr6eTeg",
+          "scientificName": "Goeppertia insignis",
+          "commonName": "Rattlesnake Plant",
+          "overview": "Goeppertia insignis, the rattlesnake plant, is a species of flowering plant in the Marantaceae family, native to Rio de Janeiro state in Brazil.",
+          "description": "Rattlesnake plant (Goeppertia insignis) is a tropical evergreen perennial native to Brazil, commonly grown as an indoor houseplant. It can be tricky to nurture, but if you give it the care it needs, you will be rewarded with an impressive display from the distinctive foliage with a wavy pattern along the edges and variegated with shades of greens. Even the undersides of the foliage are eye-catching with their beautiful purplish-red tones. In its native habitat, rattlesnake plant produces small yellow flowers in late spring. But as a houseplant, it is grown exclusively for its long, elegant, ornamental foliage, as it rarely blooms indoors. Plants typically grow to about 20 inches tall when grown as houseplants. Rattlesnake plant grows at a moderate rate indoors but will slow or stop growing if the plant is in unfavorable conditions.",
+          "size": "4in. Pot",
+          "price": 30,
+          "in_stock" : true,
+          "rating": 4,
+          "best_seller" : true,
+          "rarity": "common"
+        },
+        {
             "id": "bwsTJMnhcwE",
             "scientificName": "Monstera deliciosa",
             "commonName": "Swiss Cheese Plant",
@@ -65,6 +130,19 @@
             "best_seller" : false,
             "rarity": "uncommon"
         },
+        {
+          "id": "uSlTcsT9lpo",
+          "scientificName": "Alocasia Sanderiana Nobilis",
+          "commonName": "Alocasia Nobilis",
+          "overview": "This is a rare new cultivar that features dark green leaves with three main pointed corners, distinctive white veins, and jagged leaves all throughout forming a V-shape.",
+          "description": "WOW -- breathtaking-- what else can be said about this incredibly rare and elusive Alocasia! Alocasia sanderiana 'Nobilis' features sharply pointed and deeply lobed leaves compared to the standard sanderiana species. Any serious plant or Aroid collector must-have plant. Alocasias come in a wide range of shapes & sizes from small statured Jewel Alocasias to leafy giants, but care is relatively the same for all plants in this genus!",
+          "size": "4in. Pot",
+          "price": 80,
+          "in_stock" : false,
+          "rating": 4,
+          "best_seller" : false,
+          "rarity": "rare"
+      },
         {
           "id": "TNTZ9XRisjQ",
           "scientificName": "Ficus lyrata",
