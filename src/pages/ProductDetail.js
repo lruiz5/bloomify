@@ -21,11 +21,14 @@ export const ProductDetail = () => {
     <main>
       <section>
         <h1 className="mt-10 mb-5 text-4xl text-center font-bold text-gray-900 dark:text-slate-200">
-          {product.commonName}
+          {product.commonName}&nbsp;
+          <span className="mb-5 italic text-2xl font-thin text-center text-gray-900 dark:text-slate-200">
+            ({product.scientificName})
+          </span>
         </h1>
-        <p className="mb-5 italic text-lg text-center text-gray-900 dark:text-slate-200">
+        {/* <p className="mb-5 italic text-lg text-center text-gray-900 dark:text-slate-200">
           ({product.scientificName})
-        </p>
+        </p> */}
         <div className="flex flex-wrap justify-around">
           <div className="max-w-xl my-3">
             <img

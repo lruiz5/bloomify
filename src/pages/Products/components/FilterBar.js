@@ -1,4 +1,7 @@
-export const FilterBar = ({ setVisible }) => {
+import { useFilter } from "../../../context";
+
+export const FilterBar = ({ setShowFilter }) => {
+  const { state, dispatch } = useFilter();
   return (
     <section className="filter">
       <div
@@ -17,7 +20,7 @@ export const FilterBar = ({ setVisible }) => {
         </h5>
         <button
           type="button"
-          onClick={() => setVisible(false)}
+          onClick={() => setShowFilter(false)}
           data-drawer-dismiss="drawer-disable-body-scrolling"
           aria-controls="drawer-disable-body-scrolling"
           className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -44,6 +47,13 @@ export const FilterBar = ({ setVisible }) => {
               <p className="font-semibold my-1">Sort by</p>
               <div className="flex items-center my-1">
                 <input
+                  onChange={() =>
+                    dispatch({
+                      type: "SORT_BY",
+                      payload: { sortBy: "lowtohigh" },
+                    })
+                  }
+                  checked={state.sortBy === "lowtohigh"}
                   id="price-sort-1"
                   type="radio"
                   value=""
@@ -59,6 +69,13 @@ export const FilterBar = ({ setVisible }) => {
               </div>
               <div className="flex items-center my-1">
                 <input
+                  onChange={() =>
+                    dispatch({
+                      type: "SORT_BY",
+                      payload: { sortBy: "hightolow" },
+                    })
+                  }
+                  checked={state.sortBy === "hightolow"}
                   id="price-sort-2"
                   type="radio"
                   value=""
@@ -77,6 +94,35 @@ export const FilterBar = ({ setVisible }) => {
               <span className="font-semibold">Rating</span>
               <div className="flex items-center my-1">
                 <input
+                  onChange={() =>
+                    dispatch({
+                      type: "RATINGS",
+                      payload: { ratings: "5stars" },
+                    })
+                  }
+                  checked={state.ratings === "5stars" || false}
+                  id="rating-sort-1"
+                  type="radio"
+                  value=""
+                  name="rating-sort"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600"
+                />
+                <label
+                  htmlFor="rating-sort-1"
+                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                  5 Stars
+                </label>
+              </div>
+              <div className="flex items-center my-1">
+                <input
+                  onChange={() =>
+                    dispatch({
+                      type: "RATINGS",
+                      payload: { ratings: "4starsabove" },
+                    })
+                  }
+                  checked={state.ratings === "4starsabove" || false}
                   id="rating-sort-1"
                   type="radio"
                   value=""
@@ -92,6 +138,13 @@ export const FilterBar = ({ setVisible }) => {
               </div>
               <div className="flex items-center my-1">
                 <input
+                  onChange={() =>
+                    dispatch({
+                      type: "RATINGS",
+                      payload: { ratings: "3starsabove" },
+                    })
+                  }
+                  checked={state.ratings === "3starsabove" || false}
                   id="rating-sort-2"
                   type="radio"
                   value=""
@@ -105,43 +158,20 @@ export const FilterBar = ({ setVisible }) => {
                   3 Stars & Above
                 </label>
               </div>
-              <div className="flex items-center my-1">
-                <input
-                  id="rating-sort-3"
-                  type="radio"
-                  value=""
-                  name="rating-sort"
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600"
-                />
-                <label
-                  htmlFor="rating-sort-3"
-                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  2 Stars & Above
-                </label>
-              </div>
-              <div className="flex items-center my-1">
-                <input
-                  id="rating-sort-4"
-                  type="radio"
-                  value=""
-                  name="rating-sort"
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600"
-                />
-                <label
-                  htmlFor="rating-sort-4"
-                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  1 Stars & Above
-                </label>
-              </div>
             </li>
             <li className="mt-1 mb-5">
               <span className="font-semibold">Other Filters</span>
               <div className="flex items-center my-1">
                 <input
+                  onChange={() =>
+                    dispatch({
+                      type: "ONLY_BEST_SELLER",
+                      payload: { onlyBestSeller: !state.onlyBestSeller },
+                    })
+                  }
                   id="best-seller"
                   type="checkbox"
+                  checked={state.onlyBestSeller || false}
                   value=""
                   className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 dark:bg-gray-700 dark:border-gray-600"
                 />
@@ -154,8 +184,15 @@ export const FilterBar = ({ setVisible }) => {
               </div>
               <div className="flex items-center my-1">
                 <input
+                  onChange={() =>
+                    dispatch({
+                      type: "ONLY_IN_STOCK",
+                      payload: { onlyInStock: !state.onlyInStock },
+                    })
+                  }
                   id="only-instock"
                   type="checkbox"
+                  checked={state.onlyInStock || false}
                   value=""
                   className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 dark:bg-gray-700 dark:border-gray-600"
                 />
@@ -169,6 +206,17 @@ export const FilterBar = ({ setVisible }) => {
             </li>
             <li className="mt-1 mb-5 px-1">
               <button
+                onClick={() =>
+                  dispatch({
+                    type: "CLEAR_FILTER",
+                    payload: {
+                      onlyInStock: false,
+                      onlyBestSeller: false,
+                      sortBy: null,
+                      ratings: null,
+                    },
+                  })
+                }
                 type="button"
                 className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-10 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
               >

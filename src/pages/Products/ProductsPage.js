@@ -2,22 +2,28 @@ import { useEffect, useState } from "react";
 import { useTitle } from "../../hooks/useTitle";
 import { ProductCard } from "../../components";
 import { FilterBar } from "./components/FilterBar";
+import { useLocation } from "react-router-dom";
+import { useFilter } from "../../context";
 
 export const ProductsPage = () => {
+  const { products, initialProductList } = useFilter();
   const [showFilter, setShowFilter] = useState(false);
-  const [products, setProducts] = useState([]);
+  const search = useLocation();
+  const searchTerm = new URLSearchParams(search).get("search");
 
   useTitle("Products");
 
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch("http://localhost:8000/products");
+      const response = await fetch(
+        `http://localhost:8000/products${searchTerm || ""}`
+      );
       const data = await response.json();
-      setProducts(data);
+      initialProductList(data);
     }
 
     fetchProducts();
-  }, []);
+  }, [searchTerm]);
   return (
     <main>
       <section className="my-5">
@@ -52,7 +58,7 @@ export const ProductsPage = () => {
           ))}
         </div>
       </section>
-      {showFilter && <FilterBar setVisible={() => setShowFilter()} />}
+      {showFilter && <FilterBar setShowFilter={setShowFilter} />}
     </main>
   );
 };
