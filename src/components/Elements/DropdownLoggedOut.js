@@ -1,4 +1,5 @@
-export const DropdownLoggedOut = () => {
+import { Link } from "react-router-dom";
+export const DropdownLoggedOut = ({ setDropdownVisible }) => {
   return (
     <div
       id="dropdownAvatar"
@@ -9,28 +10,31 @@ export const DropdownLoggedOut = () => {
         aria-labelledby="dropdownUserAvatarButton"
       >
         <li>
-          <a
-            href="/"
+          <Link
+            onClick={() => setDropdownVisible(false)}
+            to="/products"
             className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
           >
-            All eBooks
-          </a>
+            All products
+          </Link>
         </li>
         <li>
-          <a
-            href="/"
+          <Link
+            onClick={() => setDropdownVisible(false)}
+            to="/login"
             className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
           >
             Login
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="/"
+          <Link
+            onClick={() => setDropdownVisible(false)}
+            to="/register"
             className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
           >
             Register
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

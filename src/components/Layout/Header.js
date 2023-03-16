@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Search } from "../Sections/Search";
 import Logo from "../../assets/logo.png";
+import { DropdownLoggedOut } from "../Elements/DropdownLoggedOut";
 
 export const Header = () => {
   const [dark, setDark] = useState(
     JSON.parse(localStorage.getItem("bloomifyDarkMode")) || false
   );
   const [searchVisible, setSearchVisible] = useState(false);
+  const [dropdownVisible, setDropdownVisible] = useState(false);
 
   useEffect(() => {
     localStorage.setItem("bloomifyDarkMode", JSON.stringify(dark));
@@ -43,7 +45,13 @@ export const Header = () => {
                 </span>
               </span>
             </Link>
-            <span className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-person-circle"></span>
+            <span
+              onClick={() => setDropdownVisible(!dropdownVisible)}
+              className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-person-circle"
+            ></span>
+            {dropdownVisible && (
+              <DropdownLoggedOut setDropdownVisible={setDropdownVisible} />
+            )}
           </div>
         </div>
       </nav>
