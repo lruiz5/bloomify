@@ -1,4 +1,31 @@
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
 export const Register = () => {
+  const navigate = useNavigate();
+  async function handleRegister(event) {
+    event.preventDefault();
+    const authDetail = {
+      name: event.target.name.value,
+      email: event.target.email.value,
+      password: event.target.password.value,
+    };
+
+    const response = await fetch("http://localhost:8000/register", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(authDetail),
+    });
+
+    const data = await response.json();
+
+    data.accessToken ? navigate("/products") : toast.error(data);
+    if (data.accessToken) {
+      sessionStorage.setItem("bloomifyToken", JSON.stringify(data.accessToken));
+      sessionStorage.setItem("blid", JSON.stringify(data.user.accessToken));
+    }
+  }
+
   return (
     <main>
       <section>
@@ -6,7 +33,7 @@ export const Register = () => {
           Register
         </p>
       </section>
-      <form>
+      <form onSubmit={handleRegister}>
         <div className="mb-6">
           <label
             htmlFor="name"

@@ -4,3 +4,5 @@ export { DashboardPage } from "./Dashboard/DashboardPage";
 export { OrderSummary } from "./Order/OrderSummary";
 export { ProductsPage } from "./Products/ProductsPage";
 export { ProductDetail } from "./ProductDetail";
+export { Login } from "./Login";
+export { Register } from "./Register";

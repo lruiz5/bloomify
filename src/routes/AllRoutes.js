@@ -6,6 +6,8 @@ import {
   OrderSummary,
   ProductsPage,
   ProductDetail,
+  Login,
+  Register,
 } from "../pages";
 
 export const AllRoutes = () => {
@@ -18,6 +20,8 @@ export const AllRoutes = () => {
         <Route path="/ordersummary" element={<OrderSummary />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/products/:id" element={<ProductDetail />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </>
   );
