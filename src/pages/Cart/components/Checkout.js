@@ -1,6 +1,61 @@
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useCart } from "../../../context";
 export const Checkout = ({ setCheckoutVisible }) => {
-  const { total, clearCart } = useCart();
+  const navigate = useNavigate();
+  const { total, cartList, clearCart } = useCart();
+  const [user, setUser] = useState({});
+  const token = JSON.parse(sessionStorage.getItem("bloomifyToken"));
+  const blid = JSON.parse(sessionStorage.getItem("blid"));
+
+  useEffect(() => {
+    async function getUser() {
+      const response = await fetch(`http://localhost:8000/600/users/${blid}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      const data = await response.json();
+      setUser(data);
+    }
+
+    getUser();
+  }, [token, blid]);
+
+  const handleOrderSubmit = async (event) => {
+    event.preventDefault();
+
+    const order = {
+      pickList: cartList,
+      amount_paid: total,
+      quantity: cartList.length,
+      user: {
+        name: event.target.name.value,
+        email: user.email,
+        id: user.id,
+      },
+    };
+
+    try {
+      const response = await fetch("http://localhost:8000/660/orders", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify(order),
+      });
+
+      const data = await response.json();
+      clearCart();
+      navigate("/order-summary", { state: { status: true, data } });
+    } catch (error) {
+      navigate("/order-summary", { state: { status: true, message: error } });
+    }
+  };
   return (
     <section>
       <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
@@ -38,7 +93,7 @@ export const Checkout = ({ setCheckoutVisible }) => {
               <h3 className="mb-4 text-xl font-medium text-gray-900 dark:text-white">
                 <i className="bi bi-credit-card mr-2"></i>CARD PAYMENT
               </h3>
-              <form className="space-y-6">
+              <form onSubmit={handleOrderSubmit} className="space-y-6">
                 <div>
                   <label
                     htmlFor="name"
@@ -51,7 +106,7 @@ export const Checkout = ({ setCheckoutVisible }) => {
                     name="name"
                     id="name"
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
-                    value="Shubham Sarda"
+                    value={user.name || "John Deere"}
                     disabled
                     required=""
                   />
@@ -68,7 +123,7 @@ export const Checkout = ({ setCheckoutVisible }) => {
                     name="email"
                     id="email"
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
-                    value="shubham@example.com"
+                    value={user.email || "user@example.com"}
                     disabled
                     required=""
                   />
@@ -81,11 +136,12 @@ export const Checkout = ({ setCheckoutVisible }) => {
                     Card Number:
                   </label>
                   <input
-                    type="number"
+                    /* can be type number */
+                    type="text"
                     name="card"
                     id="card"
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
-                    value="4215625462597845"
+                    value="************1234"
                     disabled
                     required=""
                   />
@@ -102,7 +158,7 @@ export const Checkout = ({ setCheckoutVisible }) => {
                     name="month"
                     id="month"
                     className="inline-block w-20 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
-                    value="03"
+                    value="12"
                     disabled
                     required=""
                   />
@@ -111,7 +167,7 @@ export const Checkout = ({ setCheckoutVisible }) => {
                     name="year"
                     id="year"
                     className="inline-block w-20 ml-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
-                    value="27"
+                    value={new Date().getFullYear().toString().substring(2)}
                     disabled
                     required=""
                   />
@@ -128,7 +184,7 @@ export const Checkout = ({ setCheckoutVisible }) => {
                     name="code"
                     id="code"
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
-                    value="523"
+                    value="123"
                     disabled
                     required=""
                   />
@@ -137,7 +193,6 @@ export const Checkout = ({ setCheckoutVisible }) => {
                   ${total}
                 </p>
                 <button
-                  onClick={() => clearCart()}
                   type="submit"
                   className="w-full text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700"
                 >

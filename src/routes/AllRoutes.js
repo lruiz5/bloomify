@@ -38,7 +38,7 @@ export const AllRoutes = () => {
           }
         />
         <Route
-          path="/ordersummary"
+          path="/order-summary"
           element={
             <ProtectedRoute>
               <OrderSummary />
