@@ -24,7 +24,7 @@ export const Login = () => {
 
     if (data.accessToken) {
       sessionStorage.setItem("bloomifyToken", JSON.stringify(data.accessToken));
-      sessionStorage.setItem("blid", JSON.stringify(data.user.accessToken));
+      sessionStorage.setItem("blid", JSON.stringify(data.user.id));
     }
   }
   return (

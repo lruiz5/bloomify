@@ -237,7 +237,144 @@
       "rarity": "common"
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "pickList": [
+        {
+          "id": "enQ7lRYW-uU",
+          "scientificName": "Epipremnum aureum",
+          "commonName": "Snow Queen",
+          "overview": "Keeping the Snow Queen pothos happy indoors is pretty straightforward. However, its care differs slightly from other pothos varieties like the golden pothos or Marble Queen pothos.",
+          "description": "Epipremnum aureum as a general genus and species is native to Southeast Asia. I couldn’t find the exact origin of the snow queen variety, but my guess is that it’s somewhere around there. And it was probably a result of either a hybridized plant or a rando mutation that someone ran with. Snow queen pothos has the same familiar heart-shaped leaves that other epipremnum aureum pothos plants have. It vines and climbs, so it looks lovely in a hanging basket or climbing a moss pole. The thing that makes snow queen pothos unique and a bit more interesting than some other pothos plants, though, is its gorgeous variegation. The leaves are generally very light—nearly white—with green variegation and speckles on them. You might think, “Brittany, you’re talking about a marble queen pothos.” And I could be, because the marble queen pothos plant is very similar to the snow queen pothos plant. And it’s easy to confuse the two. But I own both, so let’s have a nosy at them!",
+          "size": "6in. Pot",
+          "price": 15,
+          "in_stock": true,
+          "rating": 5,
+          "best_seller": true,
+          "rarity": "common"
+        }
+      ],
+      "amount_paid": 15,
+      "quantity": 1,
+      "user": {
+        "name": "Luis",
+        "email": "luis@gmail.com",
+        "id": 2
+      },
+      "id": 1
+    },
+    {
+      "pickList": [
+        {
+          "id": "N7oHWhK9UDM",
+          "scientificName": "Senecio rowleyanus",
+          "commonName": "String of Pearls",
+          "overview": "This is a flowering plant in the daisy family Asteraceae. It is a creeping, perennial, succulent vine native to the drier parts of southwest Africa.",
+          "description": "The string of pearls plant is not particular about its conditions. Given enough light and fertilizer, it will grow quite vigorously in a season. A single plant will survive for about five years if properly cared for, but if you propagate new plants from stem cuttings, you can effectively keep it alive indefinitely. To enable this plant to shine, consider growing string of pearls with multiple stems in a hanging basket. Its branches can also be intertwined, and you can also grow it in a dish, allowing it to form a terrestrial mat the way it does in the wild. String of pearls has no significant disease problems, and it doesn’t require much care. It does, however, need plenty of light all year.",
+          "size": "4in. Pot",
+          "price": 15,
+          "in_stock": true,
+          "rating": 5,
+          "best_seller": false,
+          "rarity": "common"
+        },
+        {
+          "id": "MBsReSZ2WNM",
+          "scientificName": "Dracaena trifasciata",
+          "commonName": "Snake Plant",
+          "overview": "This is a species of flowering plant in the family Asparagaceae, native to tropical West Africa from Nigeria to the Congo. It is commonly known as the snake plant, among other names.",
+          "description": "Dracaena trifasciata, commonly known as the snake plant, is one of the most popular and hardy species of houseplants. Up until 2017, it was botanically classified as Sansevieria trifasciata, but its commonalities with Dracaena species were too many to overlook. The plant features stiff, sword-like leaves and can range anywhere from six inches to eight feet tall. Snake plants can vary in color although many have green-banded leaves and commonly feature a yellow border. These plants are easy to grow and, in many cases, are nearly indestructible. They will thrive in very bright light or almost dark corners of the house. Snake plants generally grow slowly in indoor light, but increasing its exposure to light will boost growth if it receives a few hours of direct sun. Planting and repotting is best done in the spring.",
+          "size": "4in. Pot",
+          "price": 30,
+          "in_stock": true,
+          "rating": 4,
+          "best_seller": true,
+          "rarity": "common"
+        }
+      ],
+      "amount_paid": 45,
+      "quantity": 2,
+      "user": {
+        "name": "Luis",
+        "email": "luis@gmail.com",
+        "id": 2
+      },
+      "id": 2
+    },
+    {
+      "pickList": [
+        {
+          "id": "OSBEqWnoDYo",
+          "scientificName": "Scindapsus pictus",
+          "commonName": "Satin Pothos",
+          "overview": "This is a species of flowering plant in the arum family Araceae, native to India, Bangladesh, Thailand, Peninsular Malaysia, Borneo, Java, Sumatra, Sulawesi, and the Philippines.",
+          "description": "Satin pothos (Scindapsus pictus), just like its botanical cousin pothos (Epipremnum aureum) is one of the easiest houseplants to grow. Both are members of the Arum family. They are evergreen tropical vines that are not cold-tolerant. That’s why pothos is usually grown indoors. What distinguishes satin pothos from pothos is the variegation of its foliage. The heart-shaped leaves have silvery grey splotches, which makes them look almost shiny and adds to the visual appeal of the plant. The intensity of the variegation depends on the cultivar. Satin pothos is a vine that will latch onto its surroundings—that can be a pole, a trellis, other plants, a wall, or a piece of furniture. The way the vine attaches to surfaces is through its aerial roots. Sometimes it does this on its own, sometimes it needs a little help, such as with invisible mini hooks. Instead of letting it trail, you can also grow satin pothos in a hanging planter allowing its foliage to cascade down.",
+          "size": "4in. Pot",
+          "price": 15,
+          "in_stock": true,
+          "rating": 4,
+          "best_seller": false,
+          "rarity": "common"
+        }
+      ],
+      "amount_paid": 15,
+      "quantity": 1,
+      "user": {
+        "name": "Luis",
+        "email": "luis@gmail.com",
+        "id": 2
+      },
+      "id": 3
+    },
+    {
+      "pickList": [
+        {
+          "id": "bwsTJMnhcwE",
+          "scientificName": "Monstera deliciosa",
+          "commonName": "Swiss Cheese Plant",
+          "overview": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama.",
+          "description": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama. It has been introduced to many tropical areas, and has become a mildly invasive species in Hawaii, Seychelles, Ascension Island and the Society Islands",
+          "size": "8in. Pot",
+          "price": 80,
+          "in_stock": true,
+          "rating": 4,
+          "best_seller": false,
+          "rarity": "uncommon"
+        }
+      ],
+      "amount_paid": 80,
+      "quantity": 1,
+      "user": {
+        "name": "Luis",
+        "email": "luis@gmail.com",
+        "id": 2
+      },
+      "id": 4
+    },
+    {
+      "pickList": [
+        {
+          "id": "enQ7lRYW-uU",
+          "scientificName": "Epipremnum aureum",
+          "commonName": "Snow Queen",
+          "overview": "Keeping the Snow Queen pothos happy indoors is pretty straightforward. However, its care differs slightly from other pothos varieties like the golden pothos or Marble Queen pothos.",
+          "description": "Epipremnum aureum as a general genus and species is native to Southeast Asia. I couldn’t find the exact origin of the snow queen variety, but my guess is that it’s somewhere around there. And it was probably a result of either a hybridized plant or a rando mutation that someone ran with. Snow queen pothos has the same familiar heart-shaped leaves that other epipremnum aureum pothos plants have. It vines and climbs, so it looks lovely in a hanging basket or climbing a moss pole. The thing that makes snow queen pothos unique and a bit more interesting than some other pothos plants, though, is its gorgeous variegation. The leaves are generally very light—nearly white—with green variegation and speckles on them. You might think, “Brittany, you’re talking about a marble queen pothos.” And I could be, because the marble queen pothos plant is very similar to the snow queen pothos plant. And it’s easy to confuse the two. But I own both, so let’s have a nosy at them!",
+          "size": "6in. Pot",
+          "price": 15,
+          "in_stock": true,
+          "rating": 5,
+          "best_seller": true,
+          "rarity": "common"
+        }
+      ],
+      "amount_paid": 15,
+      "quantity": 1,
+      "user": {
+        "name": "John Deere"
+      },
+      "id": 5
+    }
+  ],
   "users": [
     {
       "email": "luis@email.com",
