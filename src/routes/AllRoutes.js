@@ -9,17 +9,43 @@ import {
   Login,
   Register,
 } from "../pages";
+import { ProtectedRoute } from "./ProtectedRoute";
 
 export const AllRoutes = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/dashboard" element={<DashboardPage />} />
-        <Route path="/ordersummary" element={<OrderSummary />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/products/:id" element={<ProductDetail />} />
+
+        {/* protected routes */}
+        <Route
+          path="/cart"
+          element={
+            <ProtectedRoute>
+              {" "}
+              <CartPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <DashboardPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/ordersummary"
+          element={
+            <ProtectedRoute>
+              <OrderSummary />
+            </ProtectedRoute>
+          }
+        />
+
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
