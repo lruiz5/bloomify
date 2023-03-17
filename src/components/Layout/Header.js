@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
+import { useCart } from "../../context";
 import { Link } from "react-router-dom";
 import { Search } from "../Sections/Search";
 import Logo from "../../assets/logo.png";
 import { DropdownLoggedIn, DropdownLoggedOut } from "../../components";
 
 export const Header = () => {
+  const { cartList } = useCart();
   const [dark, setDark] = useState(
     JSON.parse(localStorage.getItem("bloomifyDarkMode")) || false
   );
@@ -42,7 +44,7 @@ export const Header = () => {
             <Link to={"/cart"} className="text-gray-700 dark:text-white mr-5">
               <span className="text-2xl bi bi-cart-fill relative">
                 <span className="text-white text-sm absolute -top-1 left-2.5 bg-rose-500 px-1 rounded-full">
-                  0
+                  {cartList.length}
                 </span>
               </span>
             </Link>
