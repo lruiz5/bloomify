@@ -373,6 +373,83 @@
         "name": "John Deere"
       },
       "id": 5
+    },
+    {
+      "pickList": [
+        {
+          "id": "iB9P8kt2bis",
+          "scientificName": "Begonia x corallina",
+          "commonName": "Angel Wing Begonia",
+          "overview": "The cane begonias are a group of Begonia cultivars. Their name derives from their tough, bamboo-like stems. They can grow up to 10 ft tall, which may necessitate staking.",
+          "description": "Cane-type begonias are some of the best-performing and easiest begonias to grow. They are second only to wax begonias in their ease of culture, and second to none in their beauty. The most recognizable type of begonias are known as angel wing begonias. Native to Brazil, the plant grows on upright stems with interesting dotted leaves, unique colors, and a magnificent display of flowers. The plants are not particularly difficult to grow and can be planted and grown year-round indoors, providing you meet a few basic requirements. They'll grow at a moderately quick rate, with noticeable growth visible in just six weeks' time.",
+          "size": "4in. Pot",
+          "price": 95,
+          "in_stock": true,
+          "rating": 4,
+          "best_seller": false,
+          "rarity": "rare"
+        },
+        {
+          "id": "enQ7lRYW-uU",
+          "scientificName": "Epipremnum aureum",
+          "commonName": "Snow Queen",
+          "overview": "Keeping the Snow Queen pothos happy indoors is pretty straightforward. However, its care differs slightly from other pothos varieties like the golden pothos or Marble Queen pothos.",
+          "description": "Epipremnum aureum as a general genus and species is native to Southeast Asia. I couldn’t find the exact origin of the snow queen variety, but my guess is that it’s somewhere around there. And it was probably a result of either a hybridized plant or a rando mutation that someone ran with. Snow queen pothos has the same familiar heart-shaped leaves that other epipremnum aureum pothos plants have. It vines and climbs, so it looks lovely in a hanging basket or climbing a moss pole. The thing that makes snow queen pothos unique and a bit more interesting than some other pothos plants, though, is its gorgeous variegation. The leaves are generally very light—nearly white—with green variegation and speckles on them. You might think, “Brittany, you’re talking about a marble queen pothos.” And I could be, because the marble queen pothos plant is very similar to the snow queen pothos plant. And it’s easy to confuse the two. But I own both, so let’s have a nosy at them!",
+          "size": "6in. Pot",
+          "price": 15,
+          "in_stock": true,
+          "rating": 5,
+          "best_seller": true,
+          "rarity": "common"
+        },
+        {
+          "id": "OSBEqWnoDYo",
+          "scientificName": "Scindapsus pictus",
+          "commonName": "Satin Pothos",
+          "overview": "This is a species of flowering plant in the arum family Araceae, native to India, Bangladesh, Thailand, Peninsular Malaysia, Borneo, Java, Sumatra, Sulawesi, and the Philippines.",
+          "description": "Satin pothos (Scindapsus pictus), just like its botanical cousin pothos (Epipremnum aureum) is one of the easiest houseplants to grow. Both are members of the Arum family. They are evergreen tropical vines that are not cold-tolerant. That’s why pothos is usually grown indoors. What distinguishes satin pothos from pothos is the variegation of its foliage. The heart-shaped leaves have silvery grey splotches, which makes them look almost shiny and adds to the visual appeal of the plant. The intensity of the variegation depends on the cultivar. Satin pothos is a vine that will latch onto its surroundings—that can be a pole, a trellis, other plants, a wall, or a piece of furniture. The way the vine attaches to surfaces is through its aerial roots. Sometimes it does this on its own, sometimes it needs a little help, such as with invisible mini hooks. Instead of letting it trail, you can also grow satin pothos in a hanging planter allowing its foliage to cascade down.",
+          "size": "4in. Pot",
+          "price": 15,
+          "in_stock": true,
+          "rating": 4,
+          "best_seller": false,
+          "rarity": "common"
+        },
+        {
+          "id": "buUOOaoUOQI",
+          "scientificName": "Aglaonema Kiwi",
+          "commonName": "Chinese Evergreen",
+          "overview": "Aglaonema Kiwi is a sunworshipper and loves soaking up the rays. A compact clustering of green leaves with frills of white variegation, she looks good with very little effort.",
+          "description": "Intense variegation and packed masses of foliage spread out from the centre of this gorgeous aglaonema variety. The leaves boast more creamy white variegation than green, and for that reason it can really flourish in that sunny spot by the window, unlike most of its shade loving cousins, where it will continue to grow brilliantly white. The green speckles that are found up the midrib and margins of the large leaves as well as across the stems work to highlight the striking brilliance of the main leaf body. This plant is found on rainforest floors around the world, and even in a packed out mass of plants it really stands out because of its unusual colouration.",
+          "size": "6in. Pot",
+          "price": 20,
+          "in_stock": true,
+          "rating": 5,
+          "best_seller": false,
+          "rarity": "common"
+        },
+        {
+          "id": "N7oHWhK9UDM",
+          "scientificName": "Senecio rowleyanus",
+          "commonName": "String of Pearls",
+          "overview": "This is a flowering plant in the daisy family Asteraceae. It is a creeping, perennial, succulent vine native to the drier parts of southwest Africa.",
+          "description": "The string of pearls plant is not particular about its conditions. Given enough light and fertilizer, it will grow quite vigorously in a season. A single plant will survive for about five years if properly cared for, but if you propagate new plants from stem cuttings, you can effectively keep it alive indefinitely. To enable this plant to shine, consider growing string of pearls with multiple stems in a hanging basket. Its branches can also be intertwined, and you can also grow it in a dish, allowing it to form a terrestrial mat the way it does in the wild. String of pearls has no significant disease problems, and it doesn’t require much care. It does, however, need plenty of light all year.",
+          "size": "4in. Pot",
+          "price": 15,
+          "in_stock": true,
+          "rating": 5,
+          "best_seller": false,
+          "rarity": "common"
+        }
+      ],
+      "amount_paid": 160,
+      "quantity": 5,
+      "user": {
+        "name": "Amanda",
+        "email": "amanda@gmail.com",
+        "id": 3
+      },
+      "id": 6
     }
   ],
   "users": [
@@ -387,6 +464,12 @@
       "password": "$2a$10$MuGrO3q32Vn1hmNh/mlrQOqw6hsp26bM4vNM5jC37KyW3pt1moGnK",
       "name": "Luis",
       "id": 2
+    },
+    {
+      "email": "amanda@gmail.com",
+      "password": "$2a$10$tgS8UlSgdwCTr151N6R3VOQET53oVD0bQe2dYVsVQa5Oe0pWDu/uW",
+      "name": "Amanda",
+      "id": 3
     }
   ]
 }
