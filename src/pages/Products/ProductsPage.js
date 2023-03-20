@@ -27,6 +27,7 @@ export const ProductsPage = () => {
     }
 
     fetchProducts();
+    // eslint-disable-next-line
   }, [searchTerm]);
   return (
     <main>
