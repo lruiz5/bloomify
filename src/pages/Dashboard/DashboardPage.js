@@ -1,14 +1,21 @@
 import { useEffect, useState } from "react";
 import { getUserOrders } from "../../utils";
+import { useTitle } from "../../hooks/useTitle";
 import { DashboardCard, DashboardEmpty } from "./components";
+import { toast } from "react-toastify";
 
 export const DashboardPage = () => {
   const [orders, setOrders] = useState([]);
+  useTitle("Dashboard");
 
   useEffect(() => {
     async function fetchOrders() {
-      const data = await getUserOrders();
-      setOrders(data);
+      try {
+        const data = await getUserOrders();
+        setOrders(data);
+      } catch (error) {
+        toast.error(`${error.toString()} orders`);
+      }
     }
 
     fetchOrders();

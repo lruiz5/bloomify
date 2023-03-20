@@ -8,6 +8,7 @@ import {
   ProductDetail,
   Login,
   Register,
+  PageNotFound,
 } from "../pages";
 import { ProtectedRoute } from "./ProtectedRoute";
 
@@ -48,6 +49,7 @@ export const AllRoutes = () => {
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>
   );

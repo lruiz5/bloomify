@@ -1,22 +1,25 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { useCart } from "../../../context";
 import { createOrder, getUser } from "../../../utils";
 export const Checkout = ({ setCheckoutVisible }) => {
   const navigate = useNavigate();
   const { total, cartList, clearCart } = useCart();
   const [user, setUser] = useState({});
-  const token = JSON.parse(sessionStorage.getItem("bloomifyToken"));
-  const blid = JSON.parse(sessionStorage.getItem("blid"));
 
   useEffect(() => {
     async function fetchData() {
-      const data = await getUser();
-      setUser(data);
+      try {
+        const data = await getUser();
+        setUser(data);
+      } catch (error) {
+        toast.error(`${error.toString()} user info`);
+      }
     }
 
     fetchData();
-  }, [token, blid]);
+  }, []);
 
   const handleOrderSubmit = async (event) => {
     event.preventDefault();

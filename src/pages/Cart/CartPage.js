@@ -3,6 +3,6 @@ import { useCart } from "../../context";
 import { EmptyCart, ProductsCart } from "./components";
 export const CartPage = () => {
   const { cartList } = useCart();
-  useTitle("Cart");
+  useTitle(`Cart (${cartList.length})`);
   return <main>{cartList.length < 1 ? <EmptyCart /> : <ProductsCart />}</main>;
 };
