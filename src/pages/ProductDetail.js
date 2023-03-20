@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useCart } from "../context";
 import { useTitle } from "../hooks/useTitle";
 import { Rating } from "../components/Elements/Rating";
+import { getProduct } from "../utils";
 
 export const ProductDetail = () => {
   const { cartList, addToCart, removeFromCart } = useCart();
@@ -13,9 +14,7 @@ export const ProductDetail = () => {
   const img_url = `https://source.unsplash.com/${id}/600x600`;
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch(`http://localhost:8000/products/${id}`);
-      const data = await response.json();
-
+      const data = await getProduct(id);
       //set product
       setProduct(data);
     }
