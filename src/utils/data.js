@@ -6,13 +6,16 @@ const getSession = () => {
 
 export async function getUser() {
   const { token, blid } = getSession();
-  const response = await fetch(`${process.env.REACT_APP_HOST}/users/${blid}`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
-    },
-  });
+  const response = await fetch(
+    `${process.env.REACT_APP_HOST}/api/users/${blid}`,
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  );
   if (!response.ok) {
     throw new Error(`${response.status} - ${response.statusText}`);
   }
@@ -23,7 +26,7 @@ export async function getUser() {
 export async function getUserOrders() {
   const { token, blid } = getSession();
   const response = await fetch(
-    `${process.env.REACT_APP_HOST}/orders?user.id=${blid}`,
+    `${process.env.REACT_APP_HOST}/api/orders?user.id=${blid}`,
     {
       method: "GET",
       headers: {
@@ -51,7 +54,7 @@ export async function createOrder(cartList, total, user) {
       id: user.id,
     },
   };
-  const response = await fetch(`${process.env.REACT_APP_HOST}/orders`, {
+  const response = await fetch(`${process.env.REACT_APP_HOST}/api/orders`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
