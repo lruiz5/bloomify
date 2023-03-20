@@ -4,27 +4,21 @@ export const Faq = () => {
   const faqs = [
     {
       id: 1,
-      question: "Why should I use CodeBook?",
+      question: "Why should I hire you, Luis?",
       answer:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus earum dicta nesciunt, nulla alias consequuntur cumque incidunt saepe mollitia esse! Magni praesentium delectus excepturi nostrum illo repellendus cum eius neque, aperiam dolores quaerat quis dolore magnam doloremque minus sint nemo qui necessitatibus at. Perspiciatis, corrupti cum labore quos odio porro!",
+        "I believe that my extensive experience in building web applications using React and my familiarity with the full stack make me an excellent candidate for any job that I apply to. Furthermore, I have worked with JS, HTML, CSS and other relevant programming languages and am comfortable with bothe front-end and back-end development. Let's get in contact and we can discuss my qualifications further!",
     },
     {
       id: 2,
-      question: "Can I access my eBook on mobile?",
+      question: "How can I see more of your work?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. At accusamus nobis tempore perferendis qui, quam, atque reprehenderit vero quaerat, assumenda pariatur eveniet. Maxime eaque, neque corrupti ad minus repudiandae consectetur!",
+        "Check the links in the footer below! They will guide you to my personal website, GitHub, LinkedIn and my most recent published works!",
     },
     {
       id: 3,
       question: "Do you offer refunds?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iste dolor deserunt expedita quam fugit et inventore amet pariatur. Animi.",
-    },
-    {
-      id: 4,
-      question: "Do you support Internation payments?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iste dolor deserunt expedita quam fugit et inventore amet pariatur. Animi.",
+        "As this is a fictional e-commerce site that does not accept real payments, no refunds will be issued to anyone for anything. This site serves one purpose: to allow me to showcase my React skills in the real world.",
     },
   ];
 
