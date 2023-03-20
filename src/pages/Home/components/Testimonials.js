@@ -11,7 +11,8 @@ export const Testimonials = () => {
               Wouldn't Shop Anywhere Else!
             </h3>
             <p className="my-4 font-light">
-              "If you care for your time, I hands down would go with this."
+              "If you care for your time, I hands down would go with this. Can't
+              go wrong!"
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
@@ -23,7 +24,7 @@ export const Testimonials = () => {
             <div className="space-y-0.5 font-medium dark:text-white text-left">
               <div>Bonnie Green</div>
               <div className="text-sm font-light text-gray-500 dark:text-gray-400">
-                Developer at Random AI
+                Avid Plant Caretaker
               </div>
             </div>
           </figcaption>
@@ -34,8 +35,8 @@ export const Testimonials = () => {
               Outstanding Selection of Plants
             </h3>
             <p className="my-4 font-light">
-              "Designing with Figma components that can be easily translated to
-              the utility classes of Tailwind CSS is a huge timesaver!"
+              "I've never seen such a large selection of products! I could
+              browse for hours! Definitely recommend for one-stop shopping!"
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
@@ -47,7 +48,7 @@ export const Testimonials = () => {
             <div className="space-y-0.5 font-medium dark:text-white text-left">
               <div>Roberta Casas</div>
               <div className="text-sm font-light text-gray-500 dark:text-gray-400">
-                Lead designer at Random
+                Botanist
               </div>
             </div>
           </figcaption>
@@ -58,8 +59,8 @@ export const Testimonials = () => {
               Vast Selection of Rare Plants :O
             </h3>
             <p className="my-4 font-light">
-              "Aesthetically, the well designed components are beautiful and
-              will undoubtedly level up your next application."
+              "I've never even heard of some of these plants before, the product
+              availability and information provided are astounding!"
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
@@ -71,7 +72,7 @@ export const Testimonials = () => {
             <div className="space-y-0.5 font-medium dark:text-white text-left">
               <div>Jese Leos</div>
               <div className="text-sm font-light text-gray-500 dark:text-gray-400">
-                Software Engineer at Random
+                Biological Science Tech
               </div>
             </div>
           </figcaption>
@@ -82,8 +83,8 @@ export const Testimonials = () => {
               Exactly What I've Been Looking For!
             </h3>
             <p className="my-4 font-light">
-              "You have many products that can be used to create a fast
-              prototype for your team."
+              "You have many products that are far superior than any other
+              e-commerce plant shop, WOW!"
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
@@ -95,7 +96,7 @@ export const Testimonials = () => {
             <div className="space-y-0.5 font-medium dark:text-white text-left">
               <div>Joseph McFall</div>
               <div className="text-sm font-light text-gray-500 dark:text-gray-400">
-                CTO at Random
+                Plant Lover
               </div>
             </div>
           </figcaption>
