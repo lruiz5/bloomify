@@ -252,168 +252,6 @@
           "rating": 5,
           "best_seller": true,
           "rarity": "common"
-        }
-      ],
-      "amount_paid": 15,
-      "quantity": 1,
-      "user": {
-        "name": "Luis",
-        "email": "luis@gmail.com",
-        "id": 2
-      },
-      "id": 1
-    },
-    {
-      "pickList": [
-        {
-          "id": "N7oHWhK9UDM",
-          "scientificName": "Senecio rowleyanus",
-          "commonName": "String of Pearls",
-          "overview": "This is a flowering plant in the daisy family Asteraceae. It is a creeping, perennial, succulent vine native to the drier parts of southwest Africa.",
-          "description": "The string of pearls plant is not particular about its conditions. Given enough light and fertilizer, it will grow quite vigorously in a season. A single plant will survive for about five years if properly cared for, but if you propagate new plants from stem cuttings, you can effectively keep it alive indefinitely. To enable this plant to shine, consider growing string of pearls with multiple stems in a hanging basket. Its branches can also be intertwined, and you can also grow it in a dish, allowing it to form a terrestrial mat the way it does in the wild. String of pearls has no significant disease problems, and it doesn’t require much care. It does, however, need plenty of light all year.",
-          "size": "4in. Pot",
-          "price": 15,
-          "in_stock": true,
-          "rating": 5,
-          "best_seller": false,
-          "rarity": "common"
-        },
-        {
-          "id": "MBsReSZ2WNM",
-          "scientificName": "Dracaena trifasciata",
-          "commonName": "Snake Plant",
-          "overview": "This is a species of flowering plant in the family Asparagaceae, native to tropical West Africa from Nigeria to the Congo. It is commonly known as the snake plant, among other names.",
-          "description": "Dracaena trifasciata, commonly known as the snake plant, is one of the most popular and hardy species of houseplants. Up until 2017, it was botanically classified as Sansevieria trifasciata, but its commonalities with Dracaena species were too many to overlook. The plant features stiff, sword-like leaves and can range anywhere from six inches to eight feet tall. Snake plants can vary in color although many have green-banded leaves and commonly feature a yellow border. These plants are easy to grow and, in many cases, are nearly indestructible. They will thrive in very bright light or almost dark corners of the house. Snake plants generally grow slowly in indoor light, but increasing its exposure to light will boost growth if it receives a few hours of direct sun. Planting and repotting is best done in the spring.",
-          "size": "4in. Pot",
-          "price": 30,
-          "in_stock": true,
-          "rating": 4,
-          "best_seller": true,
-          "rarity": "common"
-        }
-      ],
-      "amount_paid": 45,
-      "quantity": 2,
-      "user": {
-        "name": "Luis",
-        "email": "luis@gmail.com",
-        "id": 2
-      },
-      "id": 2
-    },
-    {
-      "pickList": [
-        {
-          "id": "OSBEqWnoDYo",
-          "scientificName": "Scindapsus pictus",
-          "commonName": "Satin Pothos",
-          "overview": "This is a species of flowering plant in the arum family Araceae, native to India, Bangladesh, Thailand, Peninsular Malaysia, Borneo, Java, Sumatra, Sulawesi, and the Philippines.",
-          "description": "Satin pothos (Scindapsus pictus), just like its botanical cousin pothos (Epipremnum aureum) is one of the easiest houseplants to grow. Both are members of the Arum family. They are evergreen tropical vines that are not cold-tolerant. That’s why pothos is usually grown indoors. What distinguishes satin pothos from pothos is the variegation of its foliage. The heart-shaped leaves have silvery grey splotches, which makes them look almost shiny and adds to the visual appeal of the plant. The intensity of the variegation depends on the cultivar. Satin pothos is a vine that will latch onto its surroundings—that can be a pole, a trellis, other plants, a wall, or a piece of furniture. The way the vine attaches to surfaces is through its aerial roots. Sometimes it does this on its own, sometimes it needs a little help, such as with invisible mini hooks. Instead of letting it trail, you can also grow satin pothos in a hanging planter allowing its foliage to cascade down.",
-          "size": "4in. Pot",
-          "price": 15,
-          "in_stock": true,
-          "rating": 4,
-          "best_seller": false,
-          "rarity": "common"
-        }
-      ],
-      "amount_paid": 15,
-      "quantity": 1,
-      "user": {
-        "name": "Luis",
-        "email": "luis@gmail.com",
-        "id": 2
-      },
-      "id": 3
-    },
-    {
-      "pickList": [
-        {
-          "id": "bwsTJMnhcwE",
-          "scientificName": "Monstera deliciosa",
-          "commonName": "Swiss Cheese Plant",
-          "overview": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama.",
-          "description": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama. It has been introduced to many tropical areas, and has become a mildly invasive species in Hawaii, Seychelles, Ascension Island and the Society Islands",
-          "size": "8in. Pot",
-          "price": 80,
-          "in_stock": true,
-          "rating": 4,
-          "best_seller": false,
-          "rarity": "uncommon"
-        }
-      ],
-      "amount_paid": 80,
-      "quantity": 1,
-      "user": {
-        "name": "Luis",
-        "email": "luis@gmail.com",
-        "id": 2
-      },
-      "id": 4
-    },
-    {
-      "pickList": [
-        {
-          "id": "enQ7lRYW-uU",
-          "scientificName": "Epipremnum aureum",
-          "commonName": "Snow Queen",
-          "overview": "Keeping the Snow Queen pothos happy indoors is pretty straightforward. However, its care differs slightly from other pothos varieties like the golden pothos or Marble Queen pothos.",
-          "description": "Epipremnum aureum as a general genus and species is native to Southeast Asia. I couldn’t find the exact origin of the snow queen variety, but my guess is that it’s somewhere around there. And it was probably a result of either a hybridized plant or a rando mutation that someone ran with. Snow queen pothos has the same familiar heart-shaped leaves that other epipremnum aureum pothos plants have. It vines and climbs, so it looks lovely in a hanging basket or climbing a moss pole. The thing that makes snow queen pothos unique and a bit more interesting than some other pothos plants, though, is its gorgeous variegation. The leaves are generally very light—nearly white—with green variegation and speckles on them. You might think, “Brittany, you’re talking about a marble queen pothos.” And I could be, because the marble queen pothos plant is very similar to the snow queen pothos plant. And it’s easy to confuse the two. But I own both, so let’s have a nosy at them!",
-          "size": "6in. Pot",
-          "price": 15,
-          "in_stock": true,
-          "rating": 5,
-          "best_seller": true,
-          "rarity": "common"
-        }
-      ],
-      "amount_paid": 15,
-      "quantity": 1,
-      "user": {
-        "name": "John Deere"
-      },
-      "id": 5
-    },
-    {
-      "pickList": [
-        {
-          "id": "iB9P8kt2bis",
-          "scientificName": "Begonia x corallina",
-          "commonName": "Angel Wing Begonia",
-          "overview": "The cane begonias are a group of Begonia cultivars. Their name derives from their tough, bamboo-like stems. They can grow up to 10 ft tall, which may necessitate staking.",
-          "description": "Cane-type begonias are some of the best-performing and easiest begonias to grow. They are second only to wax begonias in their ease of culture, and second to none in their beauty. The most recognizable type of begonias are known as angel wing begonias. Native to Brazil, the plant grows on upright stems with interesting dotted leaves, unique colors, and a magnificent display of flowers. The plants are not particularly difficult to grow and can be planted and grown year-round indoors, providing you meet a few basic requirements. They'll grow at a moderately quick rate, with noticeable growth visible in just six weeks' time.",
-          "size": "4in. Pot",
-          "price": 95,
-          "in_stock": true,
-          "rating": 4,
-          "best_seller": false,
-          "rarity": "rare"
-        },
-        {
-          "id": "enQ7lRYW-uU",
-          "scientificName": "Epipremnum aureum",
-          "commonName": "Snow Queen",
-          "overview": "Keeping the Snow Queen pothos happy indoors is pretty straightforward. However, its care differs slightly from other pothos varieties like the golden pothos or Marble Queen pothos.",
-          "description": "Epipremnum aureum as a general genus and species is native to Southeast Asia. I couldn’t find the exact origin of the snow queen variety, but my guess is that it’s somewhere around there. And it was probably a result of either a hybridized plant or a rando mutation that someone ran with. Snow queen pothos has the same familiar heart-shaped leaves that other epipremnum aureum pothos plants have. It vines and climbs, so it looks lovely in a hanging basket or climbing a moss pole. The thing that makes snow queen pothos unique and a bit more interesting than some other pothos plants, though, is its gorgeous variegation. The leaves are generally very light—nearly white—with green variegation and speckles on them. You might think, “Brittany, you’re talking about a marble queen pothos.” And I could be, because the marble queen pothos plant is very similar to the snow queen pothos plant. And it’s easy to confuse the two. But I own both, so let’s have a nosy at them!",
-          "size": "6in. Pot",
-          "price": 15,
-          "in_stock": true,
-          "rating": 5,
-          "best_seller": true,
-          "rarity": "common"
-        },
-        {
-          "id": "OSBEqWnoDYo",
-          "scientificName": "Scindapsus pictus",
-          "commonName": "Satin Pothos",
-          "overview": "This is a species of flowering plant in the arum family Araceae, native to India, Bangladesh, Thailand, Peninsular Malaysia, Borneo, Java, Sumatra, Sulawesi, and the Philippines.",
-          "description": "Satin pothos (Scindapsus pictus), just like its botanical cousin pothos (Epipremnum aureum) is one of the easiest houseplants to grow. Both are members of the Arum family. They are evergreen tropical vines that are not cold-tolerant. That’s why pothos is usually grown indoors. What distinguishes satin pothos from pothos is the variegation of its foliage. The heart-shaped leaves have silvery grey splotches, which makes them look almost shiny and adds to the visual appeal of the plant. The intensity of the variegation depends on the cultivar. Satin pothos is a vine that will latch onto its surroundings—that can be a pole, a trellis, other plants, a wall, or a piece of furniture. The way the vine attaches to surfaces is through its aerial roots. Sometimes it does this on its own, sometimes it needs a little help, such as with invisible mini hooks. Instead of letting it trail, you can also grow satin pothos in a hanging planter allowing its foliage to cascade down.",
-          "size": "4in. Pot",
-          "price": 15,
-          "in_stock": true,
-          "rating": 4,
-          "best_seller": false,
-          "rarity": "common"
         },
         {
           "id": "buUOOaoUOQI",
@@ -429,198 +267,35 @@
           "rarity": "common"
         },
         {
-          "id": "N7oHWhK9UDM",
-          "scientificName": "Senecio rowleyanus",
-          "commonName": "String of Pearls",
-          "overview": "This is a flowering plant in the daisy family Asteraceae. It is a creeping, perennial, succulent vine native to the drier parts of southwest Africa.",
-          "description": "The string of pearls plant is not particular about its conditions. Given enough light and fertilizer, it will grow quite vigorously in a season. A single plant will survive for about five years if properly cared for, but if you propagate new plants from stem cuttings, you can effectively keep it alive indefinitely. To enable this plant to shine, consider growing string of pearls with multiple stems in a hanging basket. Its branches can also be intertwined, and you can also grow it in a dish, allowing it to form a terrestrial mat the way it does in the wild. String of pearls has no significant disease problems, and it doesn’t require much care. It does, however, need plenty of light all year.",
+          "id": "xGpYDi-0348",
+          "scientificName": "Ceropegia",
+          "commonName": "String of Hearts",
+          "overview": "Ceropegia is a genus of plants within the family Apocynaceae, native to Africa, southern Asia, and Australia. It was named by Carl Linnaeus, who first described this genus in his Genera plantarum, which appeared in 1737.",
+          "description": "The String of Hearts is a sweet and fantastic hanging plant native to South Africa, Swaziland, and Zimbabwe. Due to its dark green with variegated silver markings or in cream, pink, and green heart-shaped, patterned leaves, this magnificent succulent has stolen the hearts of many collectors. It can grow up to 2 to 3-inches tall and has purple-toned stems that can reach about 3 to 9 feet long, so make sure to hang this plant somewhere high, for you to be able to witness how breathtaking it can be, especially when it starts to cascade out of the pot like a waterfall.",
           "size": "4in. Pot",
-          "price": 15,
-          "in_stock": true,
-          "rating": 5,
-          "best_seller": false,
-          "rarity": "common"
-        }
-      ],
-      "amount_paid": 160,
-      "quantity": 5,
-      "user": {
-        "name": "Amanda",
-        "email": "amanda@gmail.com",
-        "id": 3
-      },
-      "id": 6
-    },
-    {
-      "pickList": [
-        {
-          "id": "enQ7lRYW-uU",
-          "scientificName": "Epipremnum aureum",
-          "commonName": "Snow Queen",
-          "overview": "Keeping the Snow Queen pothos happy indoors is pretty straightforward. However, its care differs slightly from other pothos varieties like the golden pothos or Marble Queen pothos.",
-          "description": "Epipremnum aureum as a general genus and species is native to Southeast Asia. I couldn’t find the exact origin of the snow queen variety, but my guess is that it’s somewhere around there. And it was probably a result of either a hybridized plant or a rando mutation that someone ran with. Snow queen pothos has the same familiar heart-shaped leaves that other epipremnum aureum pothos plants have. It vines and climbs, so it looks lovely in a hanging basket or climbing a moss pole. The thing that makes snow queen pothos unique and a bit more interesting than some other pothos plants, though, is its gorgeous variegation. The leaves are generally very light—nearly white—with green variegation and speckles on them. You might think, “Brittany, you’re talking about a marble queen pothos.” And I could be, because the marble queen pothos plant is very similar to the snow queen pothos plant. And it’s easy to confuse the two. But I own both, so let’s have a nosy at them!",
-          "size": "6in. Pot",
-          "price": 15,
+          "price": 20,
           "in_stock": true,
           "rating": 5,
           "best_seller": true,
-          "rarity": "common"
-        },
-        {
-          "id": "N7oHWhK9UDM",
-          "scientificName": "Senecio rowleyanus",
-          "commonName": "String of Pearls",
-          "overview": "This is a flowering plant in the daisy family Asteraceae. It is a creeping, perennial, succulent vine native to the drier parts of southwest Africa.",
-          "description": "The string of pearls plant is not particular about its conditions. Given enough light and fertilizer, it will grow quite vigorously in a season. A single plant will survive for about five years if properly cared for, but if you propagate new plants from stem cuttings, you can effectively keep it alive indefinitely. To enable this plant to shine, consider growing string of pearls with multiple stems in a hanging basket. Its branches can also be intertwined, and you can also grow it in a dish, allowing it to form a terrestrial mat the way it does in the wild. String of pearls has no significant disease problems, and it doesn’t require much care. It does, however, need plenty of light all year.",
-          "size": "4in. Pot",
-          "price": 15,
-          "in_stock": true,
-          "rating": 5,
-          "best_seller": false,
-          "rarity": "common"
-        },
-        {
-          "id": "iB9P8kt2bis",
-          "scientificName": "Begonia x corallina",
-          "commonName": "Angel Wing Begonia",
-          "overview": "The cane begonias are a group of Begonia cultivars. Their name derives from their tough, bamboo-like stems. They can grow up to 10 ft tall, which may necessitate staking.",
-          "description": "Cane-type begonias are some of the best-performing and easiest begonias to grow. They are second only to wax begonias in their ease of culture, and second to none in their beauty. The most recognizable type of begonias are known as angel wing begonias. Native to Brazil, the plant grows on upright stems with interesting dotted leaves, unique colors, and a magnificent display of flowers. The plants are not particularly difficult to grow and can be planted and grown year-round indoors, providing you meet a few basic requirements. They'll grow at a moderately quick rate, with noticeable growth visible in just six weeks' time.",
-          "size": "4in. Pot",
-          "price": 95,
-          "in_stock": true,
-          "rating": 4,
-          "best_seller": false,
-          "rarity": "rare"
+          "rarity": "uncommon"
         }
       ],
-      "amount_paid": 125,
+      "amount_paid": 55,
       "quantity": 3,
       "user": {
-        "name": "Luis",
-        "email": "luis@gmail.com",
-        "id": 2
+        "name": "Example User",
+        "email": "example@bloomify.com",
+        "id": 1
       },
-      "id": 7
-    },
-    {
-      "pickList": [
-        {
-          "id": "bwsTJMnhcwE",
-          "scientificName": "Monstera deliciosa",
-          "commonName": "Swiss Cheese Plant",
-          "overview": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama.",
-          "description": "Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant native to tropical forests of southern Mexico, south to Panama. It has been introduced to many tropical areas, and has become a mildly invasive species in Hawaii, Seychelles, Ascension Island and the Society Islands",
-          "size": "8in. Pot",
-          "price": 80,
-          "in_stock": true,
-          "rating": 4,
-          "best_seller": false,
-          "rarity": "uncommon"
-        },
-        {
-          "id": "N7oHWhK9UDM",
-          "scientificName": "Senecio rowleyanus",
-          "commonName": "String of Pearls",
-          "overview": "This is a flowering plant in the daisy family Asteraceae. It is a creeping, perennial, succulent vine native to the drier parts of southwest Africa.",
-          "description": "",
-          "size": "4in. Pot",
-          "price": 15,
-          "in_stock": true,
-          "rating": 5,
-          "best_seller": false,
-          "rarity": "common"
-        }
-      ],
-      "amount_paid": 95,
-      "quantity": 2,
-      "user": {
-        "name": "Luis",
-        "email": "luis@gmail.com",
-        "id": 2
-      },
-      "id": 8
-    },
-    {
-      "pickList": [
-        {
-          "id": "enQ7lRYW-uU",
-          "scientificName": "Epipremnum aureum",
-          "commonName": "Snow Queen",
-          "overview": "Keeping the Snow Queen pothos happy indoors is pretty straightforward. However, its care differs slightly from other pothos varieties like the golden pothos or Marble Queen pothos.",
-          "description": "",
-          "size": "6in. Pot",
-          "price": 15,
-          "in_stock": true,
-          "rating": 5,
-          "best_seller": true,
-          "rarity": "common"
-        }
-      ],
-      "amount_paid": 15,
-      "quantity": 1,
-      "user": {
-        "name": "Luis",
-        "email": "luis@gmail.com",
-        "id": 2
-      },
-      "id": 9
-    },
-    {
-      "pickList": [
-        {
-          "id": "iB9P8kt2bis",
-          "scientificName": "Begonia x corallina",
-          "commonName": "Angel Wing Begonia",
-          "overview": "The cane begonias are a group of Begonia cultivars. Their name derives from their tough, bamboo-like stems. They can grow up to 10 ft tall, which may necessitate staking.",
-          "description": "Cane-type begonias are some of the best-performing and easiest begonias to grow. They are second only to wax begonias in their ease of culture, and second to none in their beauty. The most recognizable type of begonias are known as angel wing begonias. Native to Brazil, the plant grows on upright stems with interesting dotted leaves, unique colors, and a magnificent display of flowers. The plants are not particularly difficult to grow and can be planted and grown year-round indoors, providing you meet a few basic requirements. They'll grow at a moderately quick rate, with noticeable growth visible in just six weeks' time.",
-          "size": "4in. Pot",
-          "price": 95,
-          "in_stock": true,
-          "rating": 4,
-          "best_seller": false,
-          "rarity": "rare"
-        }
-      ],
-      "amount_paid": 95,
-      "quantity": 1,
-      "user": {
-        "name": "Luis",
-        "email": "luis@gmail.com",
-        "id": 2
-      },
-      "id": 10
+      "id": 1
     }
   ],
   "users": [
     {
-      "email": "luis@email.com",
-      "password": "$2a$10$5quiupchQl6RNthgxA37Xu.OxR8eGDcv2xchLJmOk5ykvMejjYQKK",
-      "name": "Luis",
+      "email": "example@bloomify.com",
+      "password": "$2a$10$p5n8FOyE313cgDYfHlVsVOFOZoLY/o5njA2QEW41f2ZmjeHewL7zq",
+      "name": "Example User",
       "id": 1
-    },
-    {
-      "email": "luis@gmail.com",
-      "password": "$2a$10$MuGrO3q32Vn1hmNh/mlrQOqw6hsp26bM4vNM5jC37KyW3pt1moGnK",
-      "name": "Luis",
-      "id": 2
-    },
-    {
-      "email": "amanda@gmail.com",
-      "password": "$2a$10$tgS8UlSgdwCTr151N6R3VOQET53oVD0bQe2dYVsVQa5Oe0pWDu/uW",
-      "name": "Amanda",
-      "id": 3
-    },
-    {
-      "email": "test@email.com",
-      "password": "$2a$10$8X5kKe9awCNjAg8MTKEWNuvHSwhna3S24jap2oGzfg3JPrFOjc.5.",
-      "name": "test",
-      "id": 4
-    },
-    {
-      "email": "tester@email.com",
-      "password": "$2a$10$lQ7EU3Sn9bvHqBUZ7zwHe.BuSMytCJdDId.ukL6Mtp6VF44nhczii",
-      "name": "tester",
-      "id": 5
     }
   ]
 }
