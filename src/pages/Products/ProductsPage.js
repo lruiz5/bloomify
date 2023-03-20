@@ -4,6 +4,7 @@ import { ProductCard } from "../../components";
 import { FilterBar } from "./components/FilterBar";
 import { useLocation } from "react-router-dom";
 import { useFilter } from "../../context";
+import { getProducts } from "../../utils";
 
 export const ProductsPage = () => {
   const { products, initialProductList } = useFilter();
@@ -15,16 +16,12 @@ export const ProductsPage = () => {
 
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch(
-        `http://localhost:8000/products${searchTerm || ""}`
-      );
-      const data = await response.json();
+      const data = await getProducts(searchTerm);
       initialProductList(data);
     }
 
     fetchProducts();
-    // eslint-disable-next-line
-  }, [searchTerm]);
+  }, [initialProductList, searchTerm]);
   return (
     <main>
       <section className="my-5">

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../../../context";
+import { createOrder, getUser } from "../../../utils";
 export const Checkout = ({ setCheckoutVisible }) => {
   const navigate = useNavigate();
   const { total, cartList, clearCart } = useCart();
@@ -9,47 +10,19 @@ export const Checkout = ({ setCheckoutVisible }) => {
   const blid = JSON.parse(sessionStorage.getItem("blid"));
 
   useEffect(() => {
-    async function getUser() {
-      const response = await fetch(`http://localhost:8000/600/users/${blid}`, {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
-      const data = await response.json();
+    async function fetchData() {
+      const data = await getUser();
       setUser(data);
     }
 
-    getUser();
+    fetchData();
   }, [token, blid]);
 
   const handleOrderSubmit = async (event) => {
     event.preventDefault();
 
-    const order = {
-      pickList: cartList,
-      amount_paid: total,
-      quantity: cartList.length,
-      user: {
-        name: event.target.name.value,
-        email: user.email,
-        id: user.id,
-      },
-    };
-
     try {
-      const response = await fetch("http://localhost:8000/660/orders", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify(order),
-      });
-
-      const data = await response.json();
+      const data = await createOrder(cartList, total, user);
       clearCart();
       navigate("/order-summary", { state: { status: true, data } });
     } catch (error) {
@@ -157,7 +130,7 @@ export const Checkout = ({ setCheckoutVisible }) => {
                     type="number"
                     name="month"
                     id="month"
-                    className="inline-block w-20 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
+                    className="inline-block w-20 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
                     value="12"
                     disabled
                     required=""
@@ -166,7 +139,7 @@ export const Checkout = ({ setCheckoutVisible }) => {
                     type="number"
                     name="year"
                     id="year"
-                    className="inline-block w-20 ml-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
+                    className="inline-block w-20 ml-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
                     value={new Date().getFullYear().toString().substring(2)}
                     disabled
                     required=""
