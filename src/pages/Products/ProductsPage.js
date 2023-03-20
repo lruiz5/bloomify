@@ -5,10 +5,12 @@ import { FilterBar } from "./components/FilterBar";
 import { useLocation } from "react-router-dom";
 import { useFilter } from "../../context";
 import { getProducts } from "../../utils";
+import { toast } from "react-toastify";
 
 export const ProductsPage = () => {
   const { products, initialProductList } = useFilter();
   const [showFilter, setShowFilter] = useState(false);
+
   const search = useLocation();
   const searchTerm = new URLSearchParams(search).get("search");
 
@@ -16,12 +18,16 @@ export const ProductsPage = () => {
 
   useEffect(() => {
     async function fetchProducts() {
-      const data = await getProducts(searchTerm);
-      initialProductList(data);
+      try {
+        const data = await getProducts(searchTerm);
+        initialProductList(data);
+      } catch (error) {
+        toast.error(`${error.toString()} products`);
+      }
     }
 
     fetchProducts();
-  }, [initialProductList, searchTerm]);
+  }, [searchTerm]);
   return (
     <main>
       <section className="my-5">

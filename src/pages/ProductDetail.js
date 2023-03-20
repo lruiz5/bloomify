@@ -4,6 +4,7 @@ import { useCart } from "../context";
 import { useTitle } from "../hooks/useTitle";
 import { Rating } from "../components/Elements/Rating";
 import { getProduct } from "../utils";
+import { toast } from "react-toastify";
 
 export const ProductDetail = () => {
   const { cartList, addToCart, removeFromCart } = useCart();
@@ -14,9 +15,13 @@ export const ProductDetail = () => {
   const img_url = `https://source.unsplash.com/${id}/600x600`;
   useEffect(() => {
     async function fetchProducts() {
-      const data = await getProduct(id);
-      //set product
-      setProduct(data);
+      try {
+        const data = await getProduct(id);
+        //set product
+        setProduct(data);
+      } catch (error) {
+        toast.error(`${error.toString()} product ${id}`);
+      }
     }
 
     fetchProducts();

@@ -539,6 +539,56 @@
         "id": 2
       },
       "id": 8
+    },
+    {
+      "pickList": [
+        {
+          "id": "enQ7lRYW-uU",
+          "scientificName": "Epipremnum aureum",
+          "commonName": "Snow Queen",
+          "overview": "Keeping the Snow Queen pothos happy indoors is pretty straightforward. However, its care differs slightly from other pothos varieties like the golden pothos or Marble Queen pothos.",
+          "description": "",
+          "size": "6in. Pot",
+          "price": 15,
+          "in_stock": true,
+          "rating": 5,
+          "best_seller": true,
+          "rarity": "common"
+        }
+      ],
+      "amount_paid": 15,
+      "quantity": 1,
+      "user": {
+        "name": "Luis",
+        "email": "luis@gmail.com",
+        "id": 2
+      },
+      "id": 9
+    },
+    {
+      "pickList": [
+        {
+          "id": "iB9P8kt2bis",
+          "scientificName": "Begonia x corallina",
+          "commonName": "Angel Wing Begonia",
+          "overview": "The cane begonias are a group of Begonia cultivars. Their name derives from their tough, bamboo-like stems. They can grow up to 10 ft tall, which may necessitate staking.",
+          "description": "Cane-type begonias are some of the best-performing and easiest begonias to grow. They are second only to wax begonias in their ease of culture, and second to none in their beauty. The most recognizable type of begonias are known as angel wing begonias. Native to Brazil, the plant grows on upright stems with interesting dotted leaves, unique colors, and a magnificent display of flowers. The plants are not particularly difficult to grow and can be planted and grown year-round indoors, providing you meet a few basic requirements. They'll grow at a moderately quick rate, with noticeable growth visible in just six weeks' time.",
+          "size": "4in. Pot",
+          "price": 95,
+          "in_stock": true,
+          "rating": 4,
+          "best_seller": false,
+          "rarity": "rare"
+        }
+      ],
+      "amount_paid": 95,
+      "quantity": 1,
+      "user": {
+        "name": "Luis",
+        "email": "luis@gmail.com",
+        "id": 2
+      },
+      "id": 10
     }
   ],
   "users": [

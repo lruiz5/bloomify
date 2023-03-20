@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { getUser, logout } from "../../utils";
 export const DropdownLoggedIn = ({ setDropdownVisible }) => {
   const navigate = useNavigate();
@@ -11,8 +12,12 @@ export const DropdownLoggedIn = ({ setDropdownVisible }) => {
   }, [navigate, setDropdownVisible]);
   useEffect(() => {
     async function fetchData() {
-      const data = await getUser();
-      data.email ? setUser(data) : handleLogout();
+      try {
+        const data = await getUser();
+        data.email ? setUser(data) : handleLogout();
+      } catch (error) {
+        toast.error(`${error.toString()} user info`);
+      }
     }
 
     fetchData();

@@ -6,22 +6,8 @@ const getSession = () => {
 
 export async function getUser() {
   const { token, blid } = getSession();
-  const response = await fetch(`http://localhost:8000/600/users/${blid}`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
-    },
-  });
-
-  const data = response.json();
-  return data;
-}
-
-export async function getUserOrders() {
-  const { token, blid } = getSession();
   const response = await fetch(
-    `http://localhost:8000/660/orders?user.id=${blid}`,
+    `${process.env.REACT_APP_HOST}/600/users/${blid}`,
     {
       method: "GET",
       headers: {
@@ -30,7 +16,28 @@ export async function getUserOrders() {
       },
     }
   );
+  if (!response.ok) {
+    throw new Error(`${response.status} - ${response.statusText}`);
+  }
+  const data = response.json();
+  return data;
+}
 
+export async function getUserOrders() {
+  const { token, blid } = getSession();
+  const response = await fetch(
+    `${process.env.REACT_APP_HOST}/660/orders?user.id=${blid}`,
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  );
+  if (!response.ok) {
+    throw new Error(`${response.status} - ${response.statusText}`);
+  }
   const data = await response.json();
   return data;
 }
@@ -47,7 +54,7 @@ export async function createOrder(cartList, total, user) {
       id: user.id,
     },
   };
-  const response = await fetch("http://localhost:8000/660/orders", {
+  const response = await fetch(`${process.env.REACT_APP_HOST}/660/orders`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -55,6 +62,8 @@ export async function createOrder(cartList, total, user) {
     },
     body: JSON.stringify(order),
   });
-
+  if (!response.ok) {
+    throw new Error(`${response.status} - ${response.statusText}`);
+  }
   return await response.json();
 }
