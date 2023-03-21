@@ -1,5 +1,28 @@
 import { Link } from "react-router-dom";
 
+const footerLinks = [
+  {
+    title: "My Website",
+    url: "https://luisruiz.me",
+    icon: "bi-globe2",
+  },
+  {
+    title: "GitHub",
+    url: "https://github.com/lruiz5",
+    icon: "bi-github",
+  },
+  {
+    title: "LinkedIn",
+    url: "https://linkedin.com/in/lruiz5",
+    icon: "bi-linkedin",
+  },
+  {
+    title: "Most Recent Project",
+    url: "https://luisruiz.me/projects",
+    icon: "bi-code-slash",
+  },
+];
+
 export const Footer = () => {
   const year = new Date().getFullYear();
   return (
@@ -13,42 +36,22 @@ export const Footer = () => {
           . All Rights Reserved.
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-          <Link
-            to="https://luisruiz.me"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-          >
-            <span className="w-5 h-5 cursor-pointer text-xl fill-current bi bi-globe2"></span>
-            <span className="sr-only">Luis's Website</span>
-          </Link>
-          <Link
-            to="https://github.com/lruiz5"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-          >
-            <span className="w-5 h-5 cursor-pointer text-xl fill-current  bi bi-github"></span>
-            <span className="sr-only">GitHub account</span>
-          </Link>
-          <Link
-            to="https://linkedin/in/lruiz5"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-          >
-            <span className="w-5 h-5 cursor-pointer text-xl fill-current bi bi-linkedin"></span>
-            <span className="sr-only">LinkedIn</span>
-          </Link>
-          <Link
-            to="/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-          >
-            <span className="w-5 h-5 cursor-pointer text-xl fill-current bi bi-code-slash"></span>
-            <span className="sr-only">Recent Work</span>
-          </Link>
+          {footerLinks.map((data, index) => {
+            return (
+              <Link
+                key={index}
+                to={data.url}
+                target="_blank"
+                rel="noreferrer"
+                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              >
+                <span
+                  className={`w-5 h-5 cursor-pointer text-xl fill-current bi ${data.icon}`}
+                ></span>
+                <span className="sr-only">{data.title}</span>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </footer>
